@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Raleway&family=Rubik&display=swap");
+/*              Sass Template           */
+/*  global classes  */
+
+button, button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* typography classes */
+.font-baloo {
+  font-family: "Baloo Thambi 2", cursive;
+}
+
+.font-rale {
+  font-family: "Raleway", cursive;
+}
+
+.font-rubik {
+  font-family: "Rubik", cursive;
+}
+
+.font-size-12 {
+  font-size: 12px;
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+
+.font-size-16 {
+  font-size: 16px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+/* Color Template  */
+.color-primary {
+  color: #003859;
+}
+
+.color-primary-bg {
+  background: #003859;
+}
+
+.color-second {
+  color: #00A5C4;
+}
+
+.color-second-bg {
+  background: #00A5C4;
+}
+
+.color-yellow {
+  color: #FFD289;
+}
+
+.color-yellow-bg {
+  background: #FFD289;
+}
+
+/*  top sale template   */
+#top-sale .owl-carousel .item .product a {
+  overflow: hidden;
+  
+}
+#top-sale .owl-carousel .item .product img {
+  transition: transform 0.5s ease;
+}
+#top-sale .owl-carousel .item .product img:hover {
+  transform: scale(1.1);
+}
+
+#top-sale .owl-carousel .owl-nav button {
+  position: absolute;
+  top: 30%;
+  outline: none;
+}
+#top-sale .owl-carousel .owl-nav button.owl-prev {
+  left: 0;
+}
+#top-sale .owl-carousel .owl-nav button.owl-prev span,
+#top-sale .owl-carousel .owl-nav button.owl-next span {
+  font-size: 35px;
+  color: white;
+  padding: 0 1rem;
+}
+#top-sale .owl-carousel .owl-nav button.owl-prev span {
+  margin-left: -4rem;
+}
+#top-sale .owl-carousel .owl-nav button.owl-next {
+  right: 0;
+}
+#top-sale .owl-carousel .owl-nav button.owl-next span {
+  margin-right: -4rem;
+}
+
+/*   Shows Libray Section Template */
+#shows-library .grid .grid-item {
+  margin-right: 1.2rem;
+  margin-top: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+/* Our Shows Library */
+#special-price .grid .grid-item .product a {
+  overflow: hidden;
+}
+#special-price .grid .item .product img {
+  transition: transform 0.5s ease;
+}
+#special-price .grid .item .product img:hover {
+  transform: scale(1.1);
+}
+
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/*Home page */
+.b1{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background: url(bg.jpg) no-repeat 50% 50%;
+  top: 0;
+  display: table;
+  background-size: cover;
+}
+.b1 .in1{
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  max-width: none;
+}
+.content{
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+.content h1{
+  font-family: 'Century Gothic',sans-serif;
+  color: pink;
+  font-size: 500%;
+  text-shadow: 0 0 300px #000;
+}
+.content .btn{
+  border-radius: 9px;
+  color: #f9f3f4;
+  text-decoration: none;
+  font-family: 'Century Gothic',sans-serif;
+  border: 3px solid;
+  padding: 7px 13px;
+  font-weight: bold;
+}
+.content .btn:hover{
+  color: #2196f3;
+}
+
+#aboutimage{
+  width:90%;
+  margin:2%;
+  float:left;
+  }
+  
+  #aboutimage img{
+   width:200px;
+   height:200px;
+   border-radius:100px;
+  }
+
+  .bg {
+    /* The image used */
+    background-image: url("./assets/homewallp.jpg");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  /* ACCOUNT PAGE*/
+
+  .flip-card {
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color:black;
+    color: white;
+    transform: rotateY(180deg);
+  }
